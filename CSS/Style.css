@@ -1,0 +1,23 @@
+
+*{
+    color: blue;
+}
+#two{
+    color: red;
+}
+p{
+    text-align: center;
+    font-size: 2em;
+    color: blueviolet;
+    padding: 0px;
+    margin: 0px;
+}
+.parent{
+    background-color: cadetblue;
+    width: 100%;
+    height: 500px;
+    padding: 10px 0px 0px 0px;
+}
+#child{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
