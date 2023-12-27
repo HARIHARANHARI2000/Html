@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji</title>
+    <style>
+        .container{
+           top: 50%;
+           left: 50%;
+           position: absolute;
+           transform: translate(-60%,-60%);
+        }
+        .emojiface{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+        .emojieyeballleft,.emojieyeballright{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            border: 1px solid;
+        }
+        .emojieyeballleft{
+            margin-top: 100px;
+            margin-left: 40px;
+        }
+        .emojieyeballright{
+            margin-top: 100px;
+            margin-left: 160px;
+        }
+        .eyeball{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            margin-left: 30px;
+            animation: animate 4s linear infinite;
+        }
+        .mouth{
+            width: 100px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            margin-left: 150px;
+            margin-top: 250px;
+            animation: animate 4s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                width: 30px;
+                height: 20px;
+            }
+            50%{
+                width: 40px;
+                height: 20px;
+            }
+            100%{
+                width: 50px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="emojiface">
+        <div class="emojieyeballleft">
+            <div class="eyeball"></div>
+        </div>
+        <div class="emojieyeballright">
+            <div class="eyeball"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+    </div>
+</body>
+</html>
