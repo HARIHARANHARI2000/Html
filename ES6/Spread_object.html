@@ -1,0 +1,24 @@
+<button type="button" onclick="">Add</button>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th><td>Age</td><td>Gender</td>
+        </tr>
+    </thead>
+    <tbody id="content"></tbody>
+</table>
+<script>
+    let users ={"data":[{"name":"Hari",age:23,gender:"Male"},{"name":"Ram",age:21,gender:"Male"}]}
+     
+
+     let innerHTML =""
+     //ES6 FOR Loop
+     for(let user of users.data){
+        // innerHTML = innerHTML + `<tr>
+        // innerHTML = `${innerHTML}<tr>
+        innerHTML += `<tr>
+            <td>${user.name}</td><td>${user.age}</td><td>${user.gender}</td>
+            </tr>`
+     }
+     document.getElementById("content").innerHTML=innerHTML
+</script>

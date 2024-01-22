@@ -1,0 +1,80 @@
+<script>
+    let name="Hari"// ES6
+    const age=23 // ES6
+    var gender="male" //ES6
+
+    let string1="jopas" //js
+    let string2='rahul' //js
+    let string5=`ram` // js
+    let string3=string1+", "+string2+", "+string5 // js
+    let string4= `${string1}: ${string2}: ${string5}`
+
+    console.log(string2)
+    console.log(string1)
+</script>
+<script>
+    var x = function(a, b) {
+   return x * y;
+}
+const y = (a, b) =>{
+ return   a * b;
+}
+console.log (y(5,10))
+</script>
+<script>
+    const mod =(a,b =3)=>{
+        let c= a%b;
+        return c;
+    }
+    console.log("Odd or even :"+ mod(55))
+    console.log("Odd or even :"+ mod(78,5))
+</script>
+
+<script>
+    const add=(a,b,c)=>{
+        let d=a+b+c;
+        return d;
+    }
+    console.log("add"+add(2,3,6))
+
+
+    //Array operator//
+    const mulArr=(a)=>{
+        let d=1;
+        a.forEach(element=>{
+            d=d+element;
+        })
+        return d;
+    }
+    console.log("mulArr"+mulArr([2,3,6]))
+
+    //spread operator//
+    const addSpread=(a)=>{
+        let d=0;
+        a.forEach(element=>{
+            d=d+element;
+        })
+        return d;
+    }
+    console.log("addSpread"+addSpread([2,3,6]))
+
+
+    const subSpread =(...a)=>{
+        let d=0;
+        a.forEach(val=>{
+            d=parseInt(d)+parseInt(val);
+        })
+        return d;
+    }
+    let a=[2,5,6]
+    let b=[3,4]
+    let c=4
+    let d=[1,2,3]
+    let e=["5","7"]
+    console.log("subSpread"+subSpread(...a,...b,c,...d,...e))
+    let f = [a,b,d]
+    console.log("Normal array merge"+f)
+    let g=[...a,...b,...d]
+    console.log("Spread"+g)
+
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv='X-UA-Compatible' content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title>
+  <script>
+    function onLoad(){
+      alert(document.getElementById("aTag").innerHTML)
+      document.getElementsById("aTag").href= "dom1.html"
+      document.getElementsById("aTag").innerHTML= "Welcome A tag"
+      document.getElementsById("divTag").style.color= "#ff0000"
+      document.getElementsById("divTag").style.backgroundcolor= "#999999"
+      document.getElementsById("imgId").src= "Blackcolour.jpg"
+      document.getElementsById("imgId").style.width= "50px"
+    }
+  </script>
+</head>
+<body onload="onLoad()">
+  <!--<p>P tag: Hello world</p>
+  <div class="mydiv">Hello DIV</div>-->
+  <a id="a" href="dom.html">Hello A tag</a>
+  <div id="divTag">Hello Div tag</div>
+  <p id="pTag">Hello p tag</p>
+  <img id="imgId" />
+
+</body>
+</html>
